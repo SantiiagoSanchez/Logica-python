@@ -82,16 +82,13 @@ token = get_token()
 # 2. Obtener los IDs de los artistas
 
 print("¡Bienvenido a la comparaciones de artistas.!\n")
-nombreartista = str(input("Coloca el nombre del primer artista: ")).lower()
-nombreartista2 = str(input("Coloca el nombre del segundo artista: ")).lower()
-
-artist1 = nombreartista.capitalize()
-artist2 = nombreartista2.capitalize()
+nombreartista = str(input("Coloca el nombre del primer artista: ")).lower().capitalize()
+nombreartista2 = str(input("Coloca el nombre del segundo artista: ")).lower().capitalize()
 
 
 
-artista_id_1 = buscar_Artista(token, artist1)
-artista_id_2 = buscar_Artista(token, artist2)
+artista_id_1 = buscar_Artista(token, nombreartista)
+artista_id_2 = buscar_Artista(token, nombreartista2)
 
 
 # 3. Datos
